@@ -1,0 +1,200 @@
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: center;
+  color: rgba(255, 255, 255, 0.92);
+  padding: 0 1rem;
+}
+
+.whatsapp {
+  display: inline-flex; 
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.whatsapp i {
+  font-size: 1.2rem;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes pulse-glow {
+    0% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.4); }
+    70% { box-shadow: 0 0 0 20px rgba(99, 102, 241, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0); }
+}
+
+@keyframes whatsapp-blink {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.whatsapp-blink {
+  animation: whatsapp-blink 1s infinite;
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, #4F46E5, #EC4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hover-tilt {
+    transition: transform 0.3s ease;
+}
+
+.hover-tilt:hover {
+    transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.section-entrance {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+.cta-button:hover {
+  transform: translateY(-3px);
+}
+
+/* Section Styles -  Estilos comunes a las secciones */
+section {
+  padding: 5rem 10%;
+  background-color: #f5f6fad2; 
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #2d3436;
+}
+}
+
+  .project-card {
+    width: 100%;
+    footer {
+    height: auto !important;
+    padding: 40px 20px !important;
+    position: relative !important;
+  }
+}
+.testimonials {
+  padding: 4rem 0;
+  background-color: #f8f8f85a;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Diseño responsive */
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+
+
+.testimonial {
+  background-color: #ffffff7f;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.testimonial-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.testimonial-content {
+  flex: 1;
+}
+
+.testimonial-stars {
+  color: #ffd700; /* Color de las estrellas */
+  margin-bottom: 1rem;
+}
+
+.testimonial p {
+  margin-bottom: 1rem;
+  font-style:normal
+}
+
+.testimonial-author {
+  font-weight: bold;
+  color: #333333da;
+}
+}
+
+
+/* Efecto hover para las tarjetas */
+.testimonial-card {
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Mejorar la visualización de estrellas */
+.fa-star {
+  margin-right: 1px;
+}
